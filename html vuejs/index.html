@@ -13,16 +13,18 @@
 </head>
 
 <body>
-    <div id="main">
-        <div class="top-bar">
-        </div>
-        <div id="mainbottom">
-            <div class="ms-card" :v-for="music in Musics">
-                <img class="ms-img" :src="music.poster" alt="music poster" />
-                <h3>{{music.genre}}</h3>
-                <h4>{{music.author}}</h4>
+    <div id="app">
+        <div id="main">
+            <div class="top-bar">
             </div>
-        </div>
+            <div id="mainbottom">
+                <div class="ms-card" v-for="music in Musics">
+                    <img class="ms-img" :src="music.poster" alt="music poster" />
+                    <h3>{{music.genre}}</h3>
+                    <h4>{{music.author}}</h4>
+                </div>
+            </div>
+    </div>
 </body>
 
 </html>
