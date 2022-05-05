@@ -18,7 +18,6 @@ include 'data.php';
 <body>
     <div id="main">
         <div class="top-bar">
-            <img class="spotify-logo" src="" alt="spotify logo" />
         </div>
         <div id="mainbottom">
             <?php
@@ -26,7 +25,7 @@ include 'data.php';
                 $poster = ('<img class="ms-img" src="' . $music['poster'] . '" alt="music poster" />');
                 $genre = ('<h3>' . $music['genre']  . '</h3>');
                 $author = ('<h4>' . $music['author']  . '</h4>');
-                echo ('<div class="ms-card"' . $poster . $genre . $author . '</div>');
+                echo ('<div class="ms-card">'  . $poster . $genre . $author . '</div>');
             }
             ?>
         </div>
